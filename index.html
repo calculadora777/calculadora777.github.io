@@ -8,41 +8,43 @@
 </head>
 <body>
 
-    <h1 id="titulo">Calculadora</h1>
-    
-    <div id="calculadora">
-        <div id="div_res">
-            <p id="p_res"></p>
+    <div id="tudo">
+        
+        <h1 id="titulo">Calculadora</h1>
+        
+        <div id="calculadora">
+            <div id="div_res">
+                <p id="p_res"></p>
+            </div>
+
+        <div id="div_botoes">
+
+            <div id="numeros">
+                <div class="number" id="c" onclick="limpa()">C</div>
+                <div class="number" id="raiz" onclick="adiciona_raiz('√')">√</div>
+                <div class="number" id="pot" onclick="adiciona_pot('√')">x²</div>
+                <div class="number" id="b1" onclick="adiciona_res('1')">1</div>
+                <div class="number" id="b2" onclick="adiciona_res('2')">2</div>
+                <div class="number" id="b3" onclick="adiciona_res('3')">3</div>
+                <div class="number" id="b4" onclick="adiciona_res('4')">4</div>
+                <div class="number" id="b5" onclick="adiciona_res('5')">5</div>
+                <div class="number" id="b6" onclick="adiciona_res('6')">6</div>
+                <div class="number" id="b7" onclick="adiciona_res('7')">7</div>
+                <div class="number" id="b8" onclick="adiciona_res('8')">8</div>
+                <div class="number" id="b9" onclick="adiciona_res('9')">9</div>
+                <div class="number" id="b0" onclick="adiciona_res('0')">0</div>
+                <div class="number" id="igual" onclick="calcular()">=</div>
+            </div>
+
+            <div id="operadores">
+                <div class="operador" id="mais" onclick="adiciona_res('+')">+</div>
+                <div class="operador" id="menos" onclick="adiciona_res('-')">-</div>
+                <div class="operador" id="div" onclick="adiciona_res('/')">/</div>
+                <div class="operador" id="mult" onclick="adiciona_res('*')">x</div>
+                
+            </div>
+
         </div>
-
-    <div id="div_botoes">
-
-        <div id="numeros">
-            <div class="number" id="c" onclick="limpa()">C</div>
-            <div class="number" id="raiz" onclick="adiciona_raiz('√')">√</div>
-            <div class="number" id="pot" onclick="adiciona_pot('√')">x²</div>
-            <div class="number" id="b1" onclick="adiciona_res('1')">1</div>
-            <div class="number" id="b2" onclick="adiciona_res('2')">2</div>
-            <div class="number" id="b3" onclick="adiciona_res('3')">3</div>
-            <div class="number" id="b4" onclick="adiciona_res('4')">4</div>
-            <div class="number" id="b5" onclick="adiciona_res('5')">5</div>
-            <div class="number" id="b6" onclick="adiciona_res('6')">6</div>
-            <div class="number" id="b7" onclick="adiciona_res('7')">7</div>
-            <div class="number" id="b8" onclick="adiciona_res('8')">8</div>
-            <div class="number" id="b9" onclick="adiciona_res('9')">9</div>
-            <div class="number" id="b0" onclick="adiciona_res('0')">0</div>
-            <div class="number" id="igual" onclick="calcular()">=</div>
-        </div>
-
-        <div id="operadores">
-            <div class="operador" id="mais" onclick="adiciona_res('+')">+</div>
-            <div class="operador" id="menos" onclick="adiciona_res('-')">-</div>
-            <div class="operador" id="div" onclick="adiciona_res('/')">/</div>
-            <div class="operador" id="mult" onclick="adiciona_res('*')">x</div>
-            
-        </div>
-
-    </div>
 
     </div>
 
