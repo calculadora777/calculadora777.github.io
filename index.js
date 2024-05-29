@@ -5,6 +5,7 @@ function adiciona_res(item) {
 }
 function limpa() {
     p_res.innerHTML = ''
+    return
 }
 function calcular() {
 
@@ -33,4 +34,9 @@ function adiciona_pot() {
         p_res.innerHTML += 'x'
     }
     return
+}
+function adiciona_ponto(item) {
+    if (p_res.textContent[p_res.textContent.length - 1] != '.' && p_res.textContent.length != 0) {
+        p_res.innerHTML += item
+    }
 }
